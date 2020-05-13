@@ -1,0 +1,15 @@
+{
+    "dbOptions": {
+      "database": "sequelize_test",
+      "username": "root",
+      "password": "jjc958978",
+      "dialect": "mysql",
+      "host": "localhost",
+      "port": 3306,
+      "logging": false
+    },
+    "options": {
+      "type": "js",
+      "dir": "src/models"
+    }
+  }

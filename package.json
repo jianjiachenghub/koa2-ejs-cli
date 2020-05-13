@@ -1,0 +1,43 @@
+{
+  "name": "koa2-ejs-cli",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node bin/www",
+    "dev": "./node_modules/.bin/nodemon bin/www",
+    "prd": "pm2 start bin/www",
+    "test": "cross-env NODE_ENV=test jest ./src --runInBand --forceExit --colors",
+    "models": "sequelize-automate -c \"./sequelize-automate.config.json\""
+  },
+  "dependencies": {
+    "ajv": "^6.12.0",
+    "cross-env": "^7.0.2",
+    "debug": "^4.1.1",
+    "ejs": "~2.3.3",
+    "formidable-upload-koa": "^1.0.1",
+    "fse": "^4.0.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-convert": "^1.2.0",
+    "koa-generic-session": "^2.0.4",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.0",
+    "koa-onerror": "^4.1.0",
+    "koa-redis": "^4.0.1",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.0",
+    "mysql2": "^2.1.0",
+    "redis": "^3.0.2",
+    "sequelize": "^5.21.5",
+    "sequelize-automate": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-loader": "^4.0.0",
+    "jest": "^25.3.0",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2"
+  }
+}
